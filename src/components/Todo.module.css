@@ -1,0 +1,191 @@
+/* Input */
+.inputbox {
+  flex: 2;
+  padding: 12px;
+  border: 2px solid #6c63ff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.inputbox:focus {
+  border-color: #4834d4;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+}
+
+/* Add button */
+.btn {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+  flex-shrink: 0;  
+}
+
+.btn:hover {
+  background: #4834d4;
+  transform: translateY(-2px);
+}
+
+/* Todo list container */
+ol {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Todo item */
+li {
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 14px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Todo text */
+.text {
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: bold;
+  color: #34495e;
+  font-family: "Roboto", Arial, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+/* Buttons inside each task */
+li button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+/* Delete button */
+.deletebtn {
+  background: #e74c3c;
+  color: #fff;
+}
+.deletebtn:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+.editbtn {
+  background: hsl(264, 82%, 70%);
+  color: #fff;
+  margin-left: auto;
+}
+.editbtn:hover {
+  background:  hsl(264, 79%, 80%);
+  transform: scale(1.05);
+}
+
+/* Up button */
+.upbtn {
+  background: rosybrown;
+  color: #fff;
+}
+.upbtn:hover {
+  background: goldenrod;
+  transform: scale(1.05);
+}
+
+/* Down button */
+.downbtn {
+  background: rosybrown;
+  color: #fff;
+}
+.downbtn:hover {
+  background:  goldenrod;
+  transform: scale(1.05);
+}
+
+.inputEdit {
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #6c63ff;
+    font-weight: bold;
+    height: 25px;
+}
+.inputEdit:focus {
+  border-color: #4834d4;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 40%;   
+  border: 2px solid #444;
+}
+
+.checkbox:checked {
+  accent-color: green;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.statusBadge {
+  background-color: #e0f2e9; 
+  color: darkcyan;           
+  padding: 4px 10px;       
+  border-radius: 12px;      
+  font-size: 0.8em;         
+  font-weight: 600;         
+  display: inline-block;   
+  margin-left: auto;
+}
+.datePicker {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #6c63ff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.datePicker:focus {
+  border-color: #4834d4;
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.3);
+}
+.taskBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.deadlineText {
+  font-style: italic;
+  font-weight: 200;
+  font-size: small;
+  color: darkred;
+}
+
