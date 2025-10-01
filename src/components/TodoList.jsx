@@ -155,6 +155,21 @@ function TodoList() {
     function dateChange(event) {
         setDate(event.target.value);
     } 
+
+    //pending task..!
+    useEffect(()=>{
+        const today=new Date;
+        const formated=today.toISOString().split('T')[0];
+        
+        deadlines.forEach((date,index)=>{
+            let d1=new Date(formated);
+            let d2=new Date(date);
+
+            if(d1.getTime()>d2.getTime()) {
+                toast.error(`${tasks[index]} Not Completed..!!`);
+            }
+        })
+    },[]);
     
 
     return <>
