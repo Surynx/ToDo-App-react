@@ -32,7 +32,7 @@ function TodoList() {
             setDeadlines([...deadlines,date]);
             
             //toast
-            toast.success('Task Added!')
+            toast.success('Task Added Successfully');
             setNewTask("");
             setDate("");
 
