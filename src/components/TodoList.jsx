@@ -175,7 +175,7 @@ function TodoList() {
     return <>
         <span className={style.taskBox}>
         <input className={style.inputbox} placeholder="Enter a new Task.." onChange={inputChange} value={newTask}></input>
-        <span><input type="date" className={style.datePicker} onChange={dateChange} value={date}></input></span>
+        <span><input type="date" placeholder="Mention Deadline" className={style.datePicker} onChange={dateChange} value={date}></input></span>
         <button className={style.btn} onClick={addTask}>ADD</button>
         </span>
         <ol>
