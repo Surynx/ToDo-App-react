@@ -190,84 +190,130 @@ li button {
 /* media query for making responsive */
 
 @media (max-width: 600px) {
+  /* Task input area */
   .taskBox {
     flex-direction: column;
     align-items: stretch;
     gap: 8px;
+    padding: 10px;
+    background: #f7f8fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   }
 
   .inputbox,
   .datePicker,
   .btn {
     width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
     box-sizing: border-box;
-    font-size: 16px;
   }
 
   .btn {
-    padding: 14px;
-    background: linear-gradient(45deg, #6c63ff, #4834d4);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6c63ff, #4834d4);
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transition: all 0.2s ease;
   }
 
   .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
+  ol {
+    width: 100%;
+    padding: 0 8px;
+    margin-top: 12px;
+  }
+
+  /* Todo item style */
   li {
-    flex-wrap: wrap;
-    padding: 10px 12px; 
-    gap: 8px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #6c63ff;
+    transition: all 0.2s ease;
+  }
+
+  li:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .text,
   .completed {
     width: 100%;
-    margin-bottom: 10px;
-    flex-grow: 0;
-  }
-
-  .checkbox {
-    margin-top: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+    word-wrap: break-word;
   }
 
   .deadlineText {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 12px;
+    font-size: 12px;
+    font-style: italic;
+    color: #b03a2e;
+    margin-top: 4px;
   }
 
-  .editbtn {
-    margin-left: 0;
-    background: linear-gradient(45deg, #2980b9, #3498db);
-  }
-  
-  .deletebtn {
-    background: linear-gradient(45deg, #c0392b, #e74c3c);
-  }
-
-  .upbtn, .downbtn {
-    background: linear-gradient(45deg, #7f8c8d, #95a5a6);
+  /* Button arrangement */
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   li button {
-    flex-grow: 1;
-    padding: 9px;
-    border: none;
+    flex: 1 1 48%;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 6px;
+    font-weight: 500;
     color: white;
+    border: none;
+    transition: all 0.2s ease;
+  }
+
+  .editbtn { background: linear-gradient(135deg, #2980b9, #3498db); }
+  .deletebtn { background: linear-gradient(135deg, #c0392b, #e74c3c); }
+  .upbtn { background: linear-gradient(135deg, #7f8c8d, #95a5a6); }
+  .downbtn { background: linear-gradient(135deg, #7f8c8d, #95a5a6); }
+
+  li button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
   }
 
   .inputEdit {
     width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
     margin-bottom: 8px;
   }
 
   .statusBadge {
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #e0f7fa;
+    color: #00796b;
+    align-self: flex-start;
+    margin-top: 6px;
+  }
+
+  .checkbox {
+    margin-top: 4px;
+    transform: scale(1.1);
   }
 }
+
